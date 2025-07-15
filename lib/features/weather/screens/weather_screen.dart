@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utill/get_di.dart';
+import '../../../core/get_di.dart';
 import '../controllers/weather_controller.dart';
 
 class WeatherScreen extends StatefulWidget {
@@ -92,16 +92,16 @@ class _WeatherScreenState extends State<WeatherScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text("Max: ${weather.max}", style: const TextStyle(color: Colors.white)),
-                        Text("Min: ${weather.min}", style: const TextStyle(color: Colors.white)),
+                        Text("${weather.max}: ${weather.max}", style: const TextStyle(color: Colors.white)),
+                        Text("${weather.min}: ${weather.min}", style: const TextStyle(color: Colors.white)),
                       ],
                     ),
                     const SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text("Wind: ${weather.wind}", style: const TextStyle(color: Colors.white)),
-                        Text("Humidity: ${weather.humidity}", style: const TextStyle(color: Colors.white)),
+                        Text("${weather.wind}: ${weather.wind}", style: const TextStyle(color: Colors.white)),
+                        Text("${weather.humidity}: ${weather.humidity}", style: const TextStyle(color: Colors.white)),
                       ],
                     ),
                   ],

@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-
-import 'package:logger/logger.dart';
-
-import 'features/utill/get_di.dart';
-import 'features/weather/controllers/weather_controller.dart';
+import 'core/get_di.dart';
 import 'features/weather/screens/weather_screen.dart';
 
 

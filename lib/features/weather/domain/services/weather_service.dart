@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../../../utill/app_constants.dart';
+import '../../../../core/constants/app_constants.dart';
 import '../model/weather_model.dart';
 
 class WeatherService {
